@@ -5,6 +5,7 @@
 // Swipe Inicator
 
 import 'package:flutter/material.dart';
+import 'package:todo_app/core/res/image_res';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -12,8 +13,7 @@ class OnBoardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
-      body: Container(),
+      body: Image.asset(ImageRes.todo),
     );
   }
 }

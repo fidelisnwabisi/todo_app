@@ -1,0 +1,7 @@
+class ImageRes {
+    ImageRes._();
+    static String _imageBase = "assets/images"
+    static String todo = "/todo.png";
+    static String notification = "notification.png";
+    static String bell = "bell.png";
+}
