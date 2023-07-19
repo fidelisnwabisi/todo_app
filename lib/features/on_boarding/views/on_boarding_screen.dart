@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:todo_app/core/common/widgets/white_space.dart';
+import 'package:todo_app/core/res/colours.dart';
 import 'package:todo_app/core/res/image_res';
 
 class OnBoardingScreen extends StatelessWidget {
@@ -16,6 +17,7 @@ class OnBoardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colours.darkBackground,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -30,13 +32,27 @@ class OnBoardingScreen extends StatelessWidget {
                 style: GoogleFonts.poppins(
                   fontSize: 30,
                   fontWeight: FontWeight.w500,
+                  color: Colours.light,
                 ),
               ),
               const WhiteSpace(height: 10),
-              Text("Welcome!!! Do you want to clear tasks super fast with ToDo",
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.poppins(
-                      fontSize: 16, fontWeight: FontWeight.normal))
+              Text(
+                "Welcome!!! Do you want to clear tasks super fast with ToDo",
+                textAlign: TextAlign.center,
+                style: GoogleFonts.poppins(
+                  fontSize: 16,
+                  fontWeight: FontWeight.normal,
+                  color: Colours.lightGrey,
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Placeholder(fallbackHeight: 20, fallbackWidth: 20),
+                  Placeholder(fallbackHeight: 20, fallbackWidth: 20),
+                  Placeholder(fallbackHeight: 20, fallbackWidth: 20),
+                ],
+              )
             ],
           ),
         ),
