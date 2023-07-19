@@ -1,7 +1,7 @@
 class ImageRes {
     ImageRes._();
-    static String _imageBase = "assets/images"
-    static String todo = "/todo.png";
-    static String notification = "notification.png";
-    static String bell = "bell.png";
+    static const _imageBase = "assets/images";
+    static const todo = "$_imageBase/todo.png";
+    static const notification = "$_imageBase/notification.png";
+    static const bell = "$_imageBase/bell.png";
 }
