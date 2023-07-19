@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class WhiteSpace extends StatelessWidget {
-  const WhiteSpace({super.key});
+  final double height;
+  const WhiteSpace({super.key, required this.height});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SizedBox(height: height.h);
   }
 }

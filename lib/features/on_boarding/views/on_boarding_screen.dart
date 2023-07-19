@@ -6,6 +6,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:todo_app/core/common/widgets/white_space.dart';
 import 'package:todo_app/core/res/image_res';
 
 class OnBoardingScreen extends StatelessWidget {
@@ -21,7 +22,7 @@ class OnBoardingScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(ImageRes.todo),
-              SizedBox(height: 100.h),
+              const WhiteSpace(height: 100),
               const Text(
                 "ToDo with Riverpod",
                 textAlign: TextAlign.center,
@@ -30,7 +31,7 @@ class OnBoardingScreen extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              SizedBox(height: 10.h),
+              const WhiteSpace(height: 10),
               const Text(
                 "Welcome!!! Do you want to clear tasks super fast with ToDo",
                 textAlign: TextAlign.center,
