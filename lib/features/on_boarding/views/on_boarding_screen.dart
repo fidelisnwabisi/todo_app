@@ -45,27 +45,37 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               children: const [FirstPage(), SecondPage()],
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 10)
+                  .copyWith(bottom: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(
-                    children: [
-                      // Button
-                      IconButton(
-                          iconSize: 30,
+                  GestureDetector(
+                    behavior: HitTestBehavior.opaque,
+                    onTap: () {
+                      pageController.nextPage(
+                          duration: const Duration(microseconds: 300),
+                          curve: Curves.bounceInOut);
+                    },
+                    child: const Row(
+                      children: [
+                        // Button
+                        Icon(
+                          Ionicons.chevron_forward_circle,
+                          size: 30,
                           color: Colours.light,
-                          onPressed: () {},
-                          icon: const Icon(
-                            Ionicons.chevron_forward_circle,
-                          )),
-                      // Skip
-                      const FadingText(
-                        text: 'Skip',
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ],
+                        ),
+                        WhiteSpace(
+                          width: 5,
+                        ),
+                        // Skip
+                        FadingText(
+                          text: 'Skip',
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ],
+                    ),
                   ),
                   SmoothPageIndicator(
                     controller: pageController,
