@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:todo_app/core/common/widgets/fading_text.dart';
+import 'package:todo_app/core/common/widgets/round_button.dart';
 import 'package:todo_app/core/common/widgets/white_space.dart';
 import 'package:todo_app/core/res/colours.dart';
 import 'package:todo_app/core/res/image_res.dart';
@@ -12,7 +13,6 @@ class SecondPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30),
       child: Column(
@@ -20,23 +20,9 @@ class SecondPage extends StatelessWidget {
         children: [
           Image.asset(ImageRes.todo),
           const WhiteSpace(height: 50),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colours.light,
-              minimumSize: Size(size.width * 0.9, size.height * 0.06),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
-            ),
+          RoundButton(
+            text: "Login with Phone",
             onPressed: () {},
-            child: Text(
-              "Login with Phone",
-              style: GoogleFonts.poppins(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-                color: Colours.darkBackground,
-              ),
-            ),
           ),
         ],
       ),
