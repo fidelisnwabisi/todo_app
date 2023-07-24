@@ -12,6 +12,9 @@ import 'package:todo_app/core/common/widgets/fading_text.dart';
 import 'package:todo_app/core/common/widgets/white_space.dart';
 import 'package:todo_app/core/res/colours.dart';
 import 'package:todo_app/core/res/image_res.dart';
+import 'package:todo_app/features/on_boarding/views/widgets/second_page.dart';
+
+import 'widgets/first_page.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
@@ -37,83 +40,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: [
-            PageView(controller: pageController, children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(ImageRes.todo),
-                    const WhiteSpace(height: 100),
-                    const FadingText(
-                      text: "ToDo with Riverpod",
-                      fontSize: 30,
-                      fontWeight: FontWeight.w500,
-                      textAlign: TextAlign.center,
-                    ),
-                    const WhiteSpace(height: 10),
-                    Text(
-                      "Welcome!!! Do you want to clear tasks super fast with ToDo",
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.poppins(
-                        fontSize: 16,
-                        fontWeight: FontWeight.normal,
-                        color: Colours.lightGrey,
-                      ),
-                    ),
-                    // Row(
-                    //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    //   children: [
-                    //     Row(
-                    //       children: [
-                    //         // Button
-                    //         IconButton(
-                    //             iconSize: 30,
-                    //             color: Colours.light,
-                    //             onPressed: () {},
-                    //             icon: const Icon(
-                    //               Ionicons.chevron_forward_circle,
-                    //             )),
-                    //         // Skip
-                    //         const FadingText(
-                    //           text: 'Skip',
-                    //           fontSize: 16,
-                    //           fontWeight: FontWeight.w500,
-                    //         )
-                    //       ],
-                    //     ),
-
-                    //     // Swipe Indicator
-                    //     const Placeholder(fallbackHeight: 20, fallbackWidth: 20),
-                    //   ],
-                    // )
-                  ],
-                ),
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(ImageRes.todo),
-                  const WhiteSpace(height: 100),
-                  const FadingText(
-                    text: "ToDo with Riverpod",
-                    fontSize: 30,
-                    fontWeight: FontWeight.w500,
-                    textAlign: TextAlign.center,
-                  ),
-                  const WhiteSpace(height: 10),
-                  Text(
-                    "Welcome!!! Do you want to clear tasks super fast with ToDo",
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.poppins(
-                      fontSize: 16,
-                      fontWeight: FontWeight.normal,
-                      color: Colours.lightGrey,
-                    ),
-                  ),
-                ],
-              ),
-            ]),
+            PageView(
+              controller: pageController,
+              children: const [FirstPage(), SecondPage()],
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10),
               child: Row(
