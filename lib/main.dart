@@ -23,7 +23,8 @@ class MyApp extends StatelessWidget {
           title: 'Todo App',
           debugShowMaterialGrid: false,
           theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+            colorScheme:
+                ColorScheme.fromSeed(seedColor: Colors.lightBlueAccent),
             scaffoldBackgroundColor: Colours.darkBackground,
             useMaterial3: true,
           ),

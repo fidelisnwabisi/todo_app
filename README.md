@@ -16,7 +16,10 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 # Source of the Tutorial
-(Flutter Beginners to Advanced | Dart & Riverpod | Part 1)[https://www.youtube.com/watch?v=8hO5_lf6WsA]
+[Flutter Beginners to Advanced | Dart & Riverpod | Part 1](https://www.youtube.com/watch?v=8hO5_lf6WsA)
+
+
+[Flutter Tutorial Beginners to Advanced | Task Management | Riverpod | Sqlite | Notification | Part 2](https://youtu.be/XeZ6yfV5EKY)
 
 # Time Stamp
-03:30:05
+00:48:13
