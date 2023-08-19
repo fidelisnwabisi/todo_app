@@ -35,7 +35,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colours.darkBackground,
+      backgroundColor: Colors.blue,
       body: SafeArea(
         child: Stack(
           alignment: Alignment.bottomCenter,
