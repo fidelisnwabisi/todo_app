@@ -4,6 +4,7 @@ import 'package:todo_app/core/common/widgets/round_button.dart';
 import 'package:todo_app/core/common/widgets/white_space.dart';
 import 'package:todo_app/core/res/colours.dart';
 import 'package:todo_app/core/res/image_res.dart';
+import 'package:todo_app/features/authentication/views/otp_verification_screen.dart';
 
 class SignInScreen extends StatelessWidget {
   const SignInScreen({super.key});
@@ -54,7 +55,14 @@ class SignInScreen extends StatelessWidget {
               const WhiteSpace(height: 30),
               RoundButton(
                 text: 'Send Code',
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const OTPVerificationScreen(),
+                    ),
+                  );
+                },
               )
             ],
           ),

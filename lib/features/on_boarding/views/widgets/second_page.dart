@@ -24,7 +24,7 @@ class SecondPage extends StatelessWidget {
           RoundButton(
             text: "Login with Phone",
             onPressed: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
                   builder: (_) => const SignInScreen(),
