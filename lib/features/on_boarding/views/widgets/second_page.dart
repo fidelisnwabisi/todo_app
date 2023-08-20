@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:todo_app/core/common/widgets/fading_text.dart';
 import 'package:todo_app/core/common/widgets/round_button.dart';
 import 'package:todo_app/core/common/widgets/white_space.dart';
-import 'package:todo_app/core/res/colours.dart';
 import 'package:todo_app/core/res/image_res.dart';
 import 'package:todo_app/features/authentication/views/sign_in_screen.dart';
 
