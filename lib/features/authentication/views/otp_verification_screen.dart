@@ -19,6 +19,20 @@ class OTPVerificationScreen extends StatelessWidget {
               const WhiteSpace(height: 26),
               Pinput(
                 length: 6,
+                keyboardType: TextInputType.number,
+                onCompleted: (pin) {
+                  // TODO(Verify-OTP): Send OTP to firebase for verification
+                },
+                defaultPinTheme: PinTheme(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: 16,
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colours.light,
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
               )
             ],
           ),
