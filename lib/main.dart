@@ -6,6 +6,7 @@ import 'package:todo_app/features/on_boarding/views/on_boarding_screen.dart';
 import 'package:todo_app/firebase_options.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
