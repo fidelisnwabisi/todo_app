@@ -14,6 +14,7 @@ class OTPVerificationScreen extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(ImageRes.todo),
               const WhiteSpace(height: 26),
@@ -30,7 +31,7 @@ class OTPVerificationScreen extends StatelessWidget {
                   ),
                   decoration: BoxDecoration(
                     color: Colours.light,
-                    borderRadius: BorderRadius.circular(15),
+                    borderRadius: BorderRadius.circular(8),
                   ),
                 ),
               )
